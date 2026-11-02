@@ -54,7 +54,8 @@ Reinicia DSH. El bundle aporta su propio `cordis.patch.yml`; no agregues la fila
    Sin sesión: **“Conectar con Google”** (OAuth host) o **“Vincular con código”**
    (device flow: la app → Tu → Conectar harness). El código se pega en la app.
    La sesión QR se guarda en `~/.config/tnode/harness.json` (0600) y respeta los
-   nodos aprobados.
+   nodos aprobados. **Desconectar harness** borra esa sesión, limpia el panel y
+   revoca el device en CF si está disponible.
 4. Elige entorno (`beta`/`prod`) y nodo.
 5. El panel carga el historial de sesiones desde Firestore; `+` crea una nueva.
 6. El punto verde indica el bridge; `↻` reconecta/refresca.

@@ -1,6 +1,6 @@
 {
   "name": "@tnode/dsh-plugin",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "type": "module",
   "description": "TNode plugin for DeepSeek Harness: host bridge + owner chat panel",
   "main": "lib/index.js",
