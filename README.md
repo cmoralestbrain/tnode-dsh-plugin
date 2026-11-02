@@ -12,17 +12,17 @@ Incluye:
 
 ## Instalación como usuario
 
-En DSH, abre **Settings → Plugins** e instala el bundle desde GitHub:
+En DSH, abre **Settings → Plugins** e instala el bundle desde npm o GitHub:
 
 ```text
-github:cmoralestbrain/tnode-dsh-plugin
+@tnode/dsh-plugin
 ```
 
-También puedes usar el tarball del release `v0.1.0`. Actívalo; si el perfil no
-tiene HMR, reinicia DSH.
+o el spec que corresponda (`github:usuario/repo`, tarball). Actívalo; si el perfil
+no tiene HMR, reinicia DSH.
 
-El paquete es **autocontenido**: incluye el runtime del puente en `lib/cli/`, así
-que no necesita publicar `@tnode/cli` ni resolver dependencias externas.
+El paquete es **autocontenido**: incluye el runtime del puente en `lib/cli/`, así que
+no necesita publicar `@tnode/cli` ni resolver dependencias externas.
 
 ## Instalación local (desarrollo)
 
@@ -51,7 +51,9 @@ Reinicia DSH. El bundle aporta su propio `cordis.patch.yml`; no agregues la fila
 1. Abre la sidebar derecha → **TNode** (tarjeta del guide o tab).
 2. URL: `http://127.0.0.1:3987`.
 3. Token: contenido de `~/.config/tnode/bridge-token`.
-4. Elige TSporty (OpenClaw) y chatea.
+4. Elige entorno (`beta`/`prod`) y nodo.
+5. El panel carga el historial de sesiones desde Firestore; `+` crea una nueva.
+6. El punto verde indica el bridge; `↻` reconecta/refresca.
 
 El token se guarda en `localStorage` del origen del harness; no se envía al nodo.
 Mr. Monkey (Pi) también funciona: el bridge usa el gateway subset con sesión owner `tnode-mobile-*`.
