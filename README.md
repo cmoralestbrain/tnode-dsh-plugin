@@ -51,8 +51,8 @@ Reinicia DSH. El bundle aporta su propio `cordis.patch.yml`; no agregues la fila
 1. Abre la sidebar derecha → **TNode** (tarjeta del guide o tab).
 2. URL: `http://127.0.0.1:3987`.
 3. El panel se autentica por **origen local** (`127.0.0.1`/`localhost`), sin copiar token.
-   Requisito interino: el host necesita una sesión del CLI (`tnode login --env beta|prod`).
-   Si no existe, el panel muestra **“Conecta tu cuenta TNode”** con el comando a ejecutar.
+   Si no hay sesión, pulsa **“Conectar con Google”**: el host abre el login y guarda la
+   sesión (mismo archivo 0600 que el CLI). También queda el fallback `tnode login`.
 4. Elige entorno (`beta`/`prod`) y nodo.
 5. El panel carga el historial de sesiones desde Firestore; `+` crea una nueva.
 6. El punto verde indica el bridge; `↻` reconecta/refresca.
