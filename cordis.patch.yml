@@ -1,0 +1,6 @@
+# TNode bundle patch: inserted as one layer when the bundle is enabled.
+- insert:
+    - id: tnode-bridge
+      name: "@tnode/dsh-plugin"
+      config:
+        port: 3987
