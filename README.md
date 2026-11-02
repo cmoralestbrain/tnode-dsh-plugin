@@ -50,13 +50,17 @@ Reinicia DSH. El bundle aporta su propio `cordis.patch.yml`; no agregues la fila
 
 1. Abre la sidebar derecha → **TNode** (tarjeta del guide o tab).
 2. URL: `http://127.0.0.1:3987`.
-3. Token: contenido de `~/.config/tnode/bridge-token`.
+3. El panel se autentica por **origen local** (`127.0.0.1`/`localhost`), sin copiar token.
 4. Elige entorno (`beta`/`prod`) y nodo.
 5. El panel carga el historial de sesiones desde Firestore; `+` crea una nueva.
 6. El punto verde indica el bridge; `↻` reconecta/refresca.
 
-El token se guarda en `localStorage` del origen del harness; no se envía al nodo.
-Mr. Monkey (Pi) también funciona: el bridge usa el gateway subset con sesión owner `tnode-mobile-*`.
+El token de `~/.config/tnode/bridge-token` sigue disponible para CLI/curl, pero el
+panel DSH no lo pide. Mr. Monkey (Pi) también funciona: el bridge usa el gateway subset
+con sesión owner `tnode-mobile-*`.
+
+> Seguridad MVP: el bridge confía en orígenes loopback cuando lo arranca el plugin.
+> Fase 2 lo sustituye por device authorization/QR con scopes.
 
 ## Publicación
 
