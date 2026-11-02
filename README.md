@@ -12,17 +12,17 @@ Incluye:
 
 ## Instalación como usuario
 
-En DSH, abre **Settings → Plugins** e instala el bundle desde npm o GitHub:
+En DSH, abre **Settings → Plugins** e instala el bundle desde GitHub:
 
 ```text
-@tnode/dsh-plugin
+github:cmoralestbrain/tnode-dsh-plugin
 ```
 
-o el spec que corresponda (`github:usuario/repo`, tarball). Actívalo; si el perfil
-no tiene HMR, reinicia DSH.
+También puedes usar el tarball del release `v0.1.0`. Actívalo; si el perfil no
+tiene HMR, reinicia DSH.
 
-El paquete es **autocontenido**: incluye el runtime del puente en `lib/cli/`, así que
-no necesita publicar `@tnode/cli` ni resolver dependencias externas.
+El paquete es **autocontenido**: incluye el runtime del puente en `lib/cli/`, así
+que no necesita publicar `@tnode/cli` ni resolver dependencias externas.
 
 ## Instalación local (desarrollo)
 
