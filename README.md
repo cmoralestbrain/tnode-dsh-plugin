@@ -52,7 +52,7 @@ Reinicia DSH. El bundle aporta su propio `cordis.patch.yml`; no agregues la fila
 2. URL: `http://127.0.0.1:3987`.
 3. El panel se autentica por **origen local** (`127.0.0.1`/`localhost`), sin copiar token.
    Sin sesión: **“Conectar con Google”** (OAuth host) o **“Vincular con código”**
-   (device flow: la app → Tu → Conectar harness). El código se pega en la app.
+   (device flow: la app → Tu → Conectar harness). Muestra QR local y el código manual.
    La sesión QR se guarda en `~/.config/tnode/harness.json` (0600) y respeta los
    nodos aprobados. **Desconectar harness** borra esa sesión, limpia el panel y
    revoca el device en CF si está disponible.
