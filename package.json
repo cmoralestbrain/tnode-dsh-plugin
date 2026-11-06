@@ -1,6 +1,6 @@
 {
   "name": "@tnode/dsh-plugin",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "type": "module",
   "description": "TNode plugin for DeepSeek Harness: host bridge + owner chat panel",
   "main": "lib/index.js",
@@ -25,6 +25,7 @@
   "files": [
     "lib/index.js",
     "lib/client.js",
+    "lib/a2a-tool.js",
     "lib/cli/**/*.js",
     "cordis.patch.yml",
     "README.md"
